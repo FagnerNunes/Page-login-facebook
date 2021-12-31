@@ -1,0 +1,183 @@
+
+
+body {
+    background-color: #F0F2F5;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo-descricao {
+    padding: 0 2rem;
+}
+
+.logo-descricao h1 {
+    font-family: 'Arial';
+    font-weight: bolder;
+    font-size: 3.5rem;
+    color: #1877F2;
+}
+
+.logo-descricao p {
+    font-size: 1.6rem;
+    color: rgb(44, 44, 44);
+}
+
+::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    color: rgb(145, 145, 145);
+}
+
+form {
+    display: inline-block;
+}
+
+fieldset {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 0.5rem;
+    gap: 0.8rem;
+    padding: 1rem;
+    box-shadow: 0px 4px 6px -1px rgb(175, 175, 175) ;
+}
+
+input {
+    display: block;
+    padding: 1rem 6rem 1rem 1rem;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(211, 211, 211);
+    box-shadow: 1px 1px 3px #ccc;
+}
+
+input:focus {
+    border: 1px solid #1877F2;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+}
+
+.entrar {
+    padding: 0.9rem 9.7rem;
+    background-color: #1877F2;
+    color: white;
+    border: #1877F2;
+    border-radius: 7px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.entrar:hover {
+    background-color: #166FE5;
+}
+
+.esquece-senha {
+    font-family: Arial;
+    color: #1877F2;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    text-decoration: none;
+}
+
+.esquece-senha:hover {
+    text-decoration: underline;
+}
+
+.esquece-senha::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.criar-conta {
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #42B72A;
+    border: 1px solid #42B72A;
+    border-radius: 7px;
+
+}
+
+.criar-conta:hover {
+    background-color: #36A420;
+    border: 1px solid #36A420;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+p a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+@media (min-width: 900px) {
+
+    #container {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        height: 100vh;
+    }
+
+    .formulario {
+        align-self: center;
+        margin-top: 8%;
+    }
+
+    .logo-descricao {
+        padding: 0 2rem;
+        align-self: center;
+        width: 100vh;
+        text-align: left;
+        margin-bottom: 5%;
+    }
+
+    .logo-descricao h1 {
+        font-family: arial;
+        font-size: 3.5rem;
+        color: #1877F2;
+        margin-left: 20%;
+    }
+
+    .logo-descricao p {
+        font-size: 1.7rem;
+        color: rgb(44, 44, 44);
+        text-align: left;
+        width: 80%;
+        margin-left: 20%;
+    }
+
+    p {
+        width: 90%;
+        font-size: 0.9rem;
+        margin: 2rem auto;
+    }
+
+}
