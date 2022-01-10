@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #E9EBEE;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem 0.75rem 1rem;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.080);
+}
+
+header div input, header div .esquece-senha {
+    display: none;
+}
+
+.logo h1 {
+    font-family: 'Arial';
+    font-weight: bolder;
+    font-size: 1.7rem;
+    color: #1877F2;
+} 
+
+.login .entrar {
+    text-decoration: none;
+    padding: 0.65rem 0.7rem 0.8rem 0.7rem;
+    background-color: #1B74E4;
+    color: white;
+    border: #1B74E4;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.login .entrar:hover {
+    background-color: #1A6ED8;
+    border: #1A6ED8;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 15%;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.219);
+}
+
+fieldset h3 {
+    position: relative;
+    padding: 0.1rem 0;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.900);
+}
+
+fieldset h3::after {
+    content: '';
+    position: absolute;
+    left: -16px;
+    bottom: -15px;
+    width: 107%;
+    height: 1px;
+    background-color: rgb(236, 236, 236);
+}
+
+fieldset p {
+    width: 90%;
+    text-align: justify;
+    margin-top: 1rem;
+    position: relative;
+}
+
+fieldset input {
+    padding: 1rem;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+input:focus::placeholder {
+    color: rgb(175, 175, 175);
+}
+
+fieldset p::after {
+    content: '';
+    position: absolute;
+    width: 119%;
+    height: 1px;
+    left: -16px;
+    bottom: -90px;
+    background-color: rgb(236, 236, 236);
+}
+
+::placeholder {
+    font-size: 1rem;
+}
+
+fieldset div {
+    align-self: flex-end;
+    margin-top: 2rem;
+}
+
+.cancelar, .pesquisar {
+        text-decoration: none;
+        padding: 0.6rem 1.25rem;
+        background-color: #1B74E4;
+        color: white;
+        border: #1B74E4;
+        border-radius: 5px;
+        font-family: sans-serif;
+        font-weight: 600;
+        font-size: 0.95rem;
+        cursor: pointer;
+}
+.cancelar, .pesquisar:hover {
+    background-color: #1A6ED8;
+    border: #1A6ED8;
+}
+
+.cancelar {
+    color: #4B4F56;
+    background-color: #E4E6EB;
+    margin-right: 0.1rem;
+}
+
+footer {
+    width: 100%;
+    height: 120px;
+    color: #ccc;
+    background-color: white;
+    margin-top: 77px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.030);
+}
+
+/** DESKTOP **/
+
+@media (min-width: 950px){
+
+    header div input, header div .esquece-senha {
+        display: block;
+    }
+
+    header {
+        padding: 0.52rem;
+    }
+
+    .login {
+        display: flex;
+        gap: 0 0.5rem;
+    }
+
+    .login input {
+        outline: none;
+        padding: 0.6rem;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }
+
+    input:focus {
+        border: 1px solid #1877F2;
+    }
+
+    .login .entrar {
+        padding: 0.6rem 0.7rem 0.8rem 0.7rem;
+        align-self: center;
+    }
+
+    .esquece-senha {
+        padding: 0.5rem;
+        color: #1877F2;
+        font-size: 0.9rem;
+        text-decoration: none;
+        align-self: center;
+    }
+
+    .esquece-senha:hover {
+        text-decoration: underline;
+    }
+}
+
+
